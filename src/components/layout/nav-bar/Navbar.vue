@@ -1,9 +1,9 @@
 <template>
-  <nav
-    class="p-2 flex flex-col gap-3 bg-slate-100 w-[330px] h-full overflow-y-auto"
-  >
+  <nav class="p-2 flex flex-col gap-3 bg-slate-100 w-[330px] h-full">
     <NavHeading />
-    <div class="bg-white rounded-xl py-3 flex flex-col gap-5">
+    <div
+      class="bg-white rounded-xl pb-3 flex flex-col gap-5 flex-auto overflow-auto"
+    >
       <ListUser
         v-for="(list, index) in NAV_DUMB_DATA"
         :key="index"
